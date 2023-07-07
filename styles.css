@@ -1,0 +1,174 @@
+
+/* By using this tag under style.css we can style any portion of site in whichever color we want easily
+with keeping in mind that this LINK- <link href="style.css"rel="stylesheet" /> must be attached to the html code */
+/* h1 {
+    color:brown
+}
+
+h2 {
+    color:gold
+} */
+
+
+/* We can go to google font and select any font to integrate in our code, just need to copy the link of the 
+font like and paste it in our .css file, making sure that this LINK- <link href="style.css"rel="stylesheet" />,
+must be attached to the html code */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+/* ":" symbol is used to create a variable in css, thus "root" is what we have named the variable and provided it with a color
+which can further be used anywhere to access the "primary color" */
+:root {
+    --primary-color: #FB923C;
+    --secondary-color:brown;  
+}
+/* inserted "font-family:" to get the body in font style in which we want it to be*/
+body {
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    color:#FB923C;
+}
+/* by using padding in .container we can pad or insert some distance in the sentence that is written in .container eg:- 0.5 rem (for top & bo
+ttom) and 1 rem (for right & left) */
+.container {
+    padding: 0.5rem 1rem;
+}
+/* by using max-width, & margin we can increase the width and the margin of the sentence written below the .container-centre */
+.container-centre {
+    max-width: 400px;
+    margin: auto;
+}
+/* by using text-decoration we can decorate or not decorate the link in whichever way we want */
+.link {
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-weight:bolder;
+    color: brown;
+}
+/* As you can see below, we have used "var(--primary-color)" in the "background-color:" to access the root color that we have created*/
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    border-color: brown;
+    text-align:center;
+    color:brown;
+}
+/* Same with the secondary one also */
+.link-secondary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color)
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+.list-non-bullet {
+    list-style:none;
+    padding: 0.5rem 1rem;
+    text-align:center;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0.5rem 1rem;
+    text-align:center;
+}
+
+.list-item-left {
+    list-style: none;
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    color:bisque;
+    border-bottom-left-radius: 1rem;
+}
+
+.navigation .link {
+    color:bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+}
+
+.navigation .nav-brand {
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navigation .nav-pills {
+    text-align:right;
+}
+
+.navigation .link-active {
+    font-weight: bolder;
+    color:brown;
+}
+
+.hero {
+    padding: 2rem;
+}
+
+.hero .hero-image {
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+
+.main-image {
+    display:block;
+}
+
+.hero .hero-heading {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+    color:var(--primary-color);
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.section {
+    padding: 2rem;
+}
+
+.br {
+    background-color:bisque;
+}
+
+.footer {
+    background-color: bisque;
+    padding: 2rem 1rem;
+    text-align: center;
+    color:#FB923C;
+    border-top-right-radius: 1rem;
+}
+
+.footer .footer-header {
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem;
+}
+
+.footer .link {
+    color:#FB923C;
+}
+
+.footer ul {
+    padding-inline-start: 0px
+}
+
+.ol {
+    text-align:center;
+}
+
+.headcolor {
+    color: var(--secondary-color)
+}
+
+.divstyle {
+    background-color:ivory;
+}
